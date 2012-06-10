@@ -17,8 +17,6 @@
 
 @synthesize toolbarViewController  = _toolbarViewController;
 @synthesize keyboardViewController = _keyboardViewController;
-@synthesize bannerViewContainer    = _bannerViewContainer;
-@synthesize bannerView             = _bannerView;
 @synthesize textView               = _textView;
 
 - (void)viewDidLoad
@@ -84,23 +82,11 @@
     _textView               = nil;
     _keyboardViewController = nil;
     _toolbarViewController  = nil;
-    _bannerViewContainer    = nil;
-    _bannerView             = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-
-#
-#pragma mark - Ad Network Delegates
-#
-
-- (void)adViewDidDismissScreen:(GADBannerView *)bannerView
-{
-    [_textView becomeFirstResponder];
 }
 
 
@@ -111,27 +97,16 @@
 - (void)notifyKeyboardDidShow:(NSNotification *)notification 
 {
     CGSize keyboardSize = CGSizeMake(320, 260);
-    
-    CGRect textFrame   = _textView.frame;
-    CGRect bannerFrame = _bannerViewContainer.frame;
-    
+    CGRect textFrame = _textView.frame;
     textFrame.size.height = self.view.frame.size.height - keyboardSize.height - 50;
-    bannerFrame.origin.y  = textFrame.size.height;
-    
     _textView.frame = textFrame;
-    _bannerViewContainer.frame = bannerFrame;
 }
 
 - (void)notifyKeyboardDidHide:(NSNotification *)notification
 {
     CGRect textFrame = _textView.frame;
-    CGRect bannerFrame = _bannerViewContainer.frame;
-    
     textFrame.size.height = self.view.frame.size.height - 50;
-    bannerFrame.origin.y  = textFrame.size.height;
-    
     _textView.frame = textFrame;
-    _bannerViewContainer.frame = bannerFrame;
 }
 
 @end
