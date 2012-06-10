@@ -552,26 +552,22 @@
 		FD57F6E915437B320059DEB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ehrenberg (NP55M8YVZ7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Emoji Keyboard/Emoji Keyboard-Prefix.pch";
 				INFOPLIST_FILE = "Emoji Keyboard/Emoji Keyboard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Emoji Keyboard/Support/facebook-ios-sdk\"",
-					"\"$(SRCROOT)/Emoji Keyboard/Support/GoogleAdMobAdsSDK\"",
-					"\"$(SRCROOT)/../../../Downloads/LibAdapterIAd-Mar282012\"",
 					"\"$(SRCROOT)/Emoji Keyboard/Support/TestFlightSDK\"",
 					"\"$(SRCROOT)/Emoji Keyboard/Support/FlurryAnalytics\"",
 				);
 				OTHER_CFLAGS = "-DDEBUG=1";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "192694FE-D32F-408C-8628-9E6BB1C18477";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -581,25 +577,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Steve Ehrenberg";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Emoji Keyboard/Emoji Keyboard-Prefix.pch";
 				INFOPLIST_FILE = "Emoji Keyboard/Emoji Keyboard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Emoji Keyboard/Support/facebook-ios-sdk\"",
-					"\"$(SRCROOT)/Emoji Keyboard/Support/GoogleAdMobAdsSDK\"",
-					"\"$(SRCROOT)/../../../Downloads/LibAdapterIAd-Mar282012\"",
 					"\"$(SRCROOT)/Emoji Keyboard/Support/TestFlightSDK\"",
 					"\"$(SRCROOT)/Emoji Keyboard/Support/FlurryAnalytics\"",
 				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3CEF3843-F097-494D-810A-7F106BFAE0CB";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

@@ -98,14 +98,14 @@
 {
     CGSize keyboardSize = CGSizeMake(320, 260);
     CGRect textFrame = _textView.frame;
-    textFrame.size.height = self.view.frame.size.height - keyboardSize.height - 50;
+    textFrame.size.height = self.view.frame.size.height - keyboardSize.height;
     _textView.frame = textFrame;
 }
 
 - (void)notifyKeyboardDidHide:(NSNotification *)notification
 {
     CGRect textFrame = _textView.frame;
-    textFrame.size.height = self.view.frame.size.height - 50;
+    textFrame.size.height = self.view.frame.size.height;
     _textView.frame = textFrame;
 }
 
