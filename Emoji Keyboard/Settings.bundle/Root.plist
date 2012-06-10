@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Display Settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Sort By...</string>
+			<key>Key</key>
+			<string>emojiSorting</string>
+			<key>DefaultValue</key>
+			<integer>1</integer>
+			<key>Titles</key>
+			<array>
+				<string>Mixed</string>
+				<string>New Emojis First</string>
+				<string>Old Emojis First</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>hideOldEmojis</string>
+			<key>Title</key>
+			<string>Hide Old Emojis</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Highlight New Emojis</string>
+			<key>Key</key>
+			<string>highlightNewEmojis</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Disclaimer</string>
+			<key>FooterText</key>
+			<string>*** APPLE DOES NOT GIVE ANY DEVELOPER THE ABILITY TO INSTALL NEW KEYBOARDS GLOBALLY! *** Emoji Max creates an experience that is very close to Apple&apos;s default Emoji keyboard and gives it&apos;s users the ability to do much more than just copy and paste.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Info</string>
+			<key>FooterText</key>
+			<string>If you would like to see the info window that appeared when you first loaded New Emoji Keyboard, turn this on.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Show Info Window</string>
+			<key>Key</key>
+			<string>showInfoWindow</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Version</string>
+			<key>Key</key>
+			<string>ekVersion</string>
+			<key>DefaultValue</key>
+			<string>1.0.2</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

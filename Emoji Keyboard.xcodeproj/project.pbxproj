@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD30ADE7154BC73C00DA37BC /* SEEmojiKeyboard_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD30ADE3154BC73C00DA37BC /* SEEmojiKeyboard_iPhone.xib */; };
+		FD30ADE8154BC73C00DA37BC /* SEKeyboardToolbar_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD30ADE5154BC73C00DA37BC /* SEKeyboardToolbar_iPhone.xib */; };
+		FD30ADEC154BC77B00DA37BC /* NSString+hexToBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30ADEB154BC77B00DA37BC /* NSString+hexToBytes.m */; };
+		FD4801EF155DE653004BF15F /* SEKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4801EE155DE653004BF15F /* SEKeyboardView.m */; };
+		FD4801F1155E0892004BF15F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4801F0155E0892004BF15F /* MessageUI.framework */; };
+		FD4801F3155E12E8004BF15F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4801F2155E12E8004BF15F /* Twitter.framework */; };
+		FD5707DE15448C330059DEB8 /* keyboard_background@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FD57024315448C320059DEB8 /* keyboard_background@2x~iphone.png */; };
+		FD5707DF15448C330059DEB8 /* keyboard_background~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FD57024415448C320059DEB8 /* keyboard_background~iphone.png */; };
+		FD57F6CC15437B320059DEB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD57F6CB15437B320059DEB8 /* UIKit.framework */; };
+		FD57F6CE15437B320059DEB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD57F6CD15437B320059DEB8 /* Foundation.framework */; };
+		FD57F6D015437B320059DEB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD57F6CF15437B320059DEB8 /* CoreGraphics.framework */; };
+		FD57F6D615437B320059DEB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD57F6D415437B320059DEB8 /* InfoPlist.strings */; };
+		FD57F6D815437B320059DEB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD57F6D715437B320059DEB8 /* main.m */; };
+		FD57F6DC15437B320059DEB8 /* SEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD57F6DB15437B320059DEB8 /* SEAppDelegate.m */; };
+		FD57F6DF15437B320059DEB8 /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD57F6DE15437B320059DEB8 /* SEViewController.m */; };
+		FD57F6E215437B320059DEB8 /* SEViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD57F6E015437B320059DEB8 /* SEViewController_iPhone.xib */; };
+		FD57F6F2154382050059DEB8 /* SEKeyboardToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD57F6F1154382050059DEB8 /* SEKeyboardToolbarViewController.m */; };
+		FD57F6F6154385630059DEB8 /* SEEmojiKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD57F6F4154385630059DEB8 /* SEEmojiKeyboardViewController.m */; };
+		FD58C7C1154BDAF000155354 /* backspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58C7C0154BDAF000155354 /* backspace@2x.png */; };
+		FD58C7C4154BDB8400155354 /* backspace.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58C7C3154BDB8400155354 /* backspace.png */; };
+		FD5D58261550BA540091AB6A /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5D58251550BA540091AB6A /* DDPageControl.m */; };
+		FD689090155F524600558946 /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = FD68908E155F524600558946 /* space.png */; };
+		FD689091155F524600558946 /* space@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD68908F155F524600558946 /* space@2x.png */; };
+		FD689093155F64FE00558946 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD689092155F64FE00558946 /* Settings.bundle */; };
+		FD689098155F9E7500558946 /* new_emoji_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD689097155F9E7500558946 /* new_emoji_bg@2x.png */; };
+		FD68909A155FA47300558946 /* new_emoji_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FD689099155FA47300558946 /* new_emoji_bg.png */; };
+		FD6890B4155FC2F400558946 /* app_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6890AD155FC2F400558946 /* app_icon_57.png */; };
+		FD6890B8155FC2F400558946 /* app_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6890B1155FC2F400558946 /* app_icon_114.png */; };
+		FD6890BC155FC4B000558946 /* app_icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6890BA155FC4B000558946 /* app_icon_29.png */; };
+		FD6890BD155FC4B000558946 /* app_icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6890BB155FC4B000558946 /* app_icon_58.png */; };
+		FD6890ED1561D22700558946 /* SEInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6890EC1561D22700558946 /* SEInfoViewController.m */; };
+		FD6890EF1561D2CB00558946 /* SEInfoView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6890EE1561D2CB00558946 /* SEInfoView_iPhone.xib */; };
+		FD6890F815633DDC00558946 /* NSString+trimWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6890F715633DDC00558946 /* NSString+trimWhitespace.m */; };
+		FD68910D1563530000558946 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD68910C156352FF00558946 /* AudioToolbox.framework */; };
+		FD68910F1563530F00558946 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD68910E1563530E00558946 /* SystemConfiguration.framework */; };
+		FD68911115635D0400558946 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD68911015635D0300558946 /* iAd.framework */; };
+		FD6891171563622A00558946 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6891151563622A00558946 /* libTestFlight.a */; };
+		FD6891191563626D00558946 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6891181563626C00558946 /* libz.dylib */; };
+		FD77591C15671E97002D137E /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77591B15671E97002D137E /* DebugLog.m */; };
+		FD9AFEC01563A4790095A924 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AFEBF1563A4790095A924 /* libFlurryAnalytics.a */; };
+		FDA97255155B719B00568290 /* SEKeyboardPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA97254155B719B00568290 /* SEKeyboardPageViewController.m */; };
+		FDA97261155BA26200568290 /* SEKeyboardPage_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA97260155BA26200568290 /* SEKeyboardPage_iPhone.xib */; };
+		FDD05C281547787E009FF669 /* SEEmojiCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD05C271547787E009FF669 /* SEEmojiCatalog.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD30ADE4154BC73C00DA37BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SEEmojiKeyboard_iPhone.xib; sourceTree = "<group>"; };
+		FD30ADE6154BC73C00DA37BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SEKeyboardToolbar_iPhone.xib; sourceTree = "<group>"; };
+		FD30ADEB154BC77B00DA37BC /* NSString+hexToBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+hexToBytes.m"; sourceTree = "<group>"; };
+		FD4801EB155DDCC5004BF15F /* key_popover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_popover.png; sourceTree = "<group>"; };
+		FD4801ED155DE653004BF15F /* SEKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEKeyboardView.h; sourceTree = "<group>"; };
+		FD4801EE155DE653004BF15F /* SEKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEKeyboardView.m; sourceTree = "<group>"; };
+		FD4801F0155E0892004BF15F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FD4801F2155E12E8004BF15F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		FD57024315448C320059DEB8 /* keyboard_background@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_background@2x~iphone.png"; sourceTree = "<group>"; };
+		FD57024415448C320059DEB8 /* keyboard_background~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_background~iphone.png"; sourceTree = "<group>"; };
+		FD57F6C715437B320059DEB8 /* Emoji Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD57F6CB15437B320059DEB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD57F6CD15437B320059DEB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD57F6CF15437B320059DEB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD57F6D315437B320059DEB8 /* Emoji Keyboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Emoji Keyboard-Info.plist"; sourceTree = "<group>"; };
+		FD57F6D515437B320059DEB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD57F6D715437B320059DEB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD57F6D915437B320059DEB8 /* Emoji Keyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emoji Keyboard-Prefix.pch"; sourceTree = "<group>"; };
+		FD57F6DA15437B320059DEB8 /* SEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEAppDelegate.h; sourceTree = "<group>"; };
+		FD57F6DB15437B320059DEB8 /* SEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEAppDelegate.m; sourceTree = "<group>"; };
+		FD57F6DD15437B320059DEB8 /* SEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEViewController.h; sourceTree = "<group>"; };
+		FD57F6DE15437B320059DEB8 /* SEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEViewController.m; sourceTree = "<group>"; };
+		FD57F6E115437B320059DEB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SEViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD57F6E415437B320059DEB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SEViewController_iPad.xib; sourceTree = "<group>"; };
+		FD57F6F0154382050059DEB8 /* SEKeyboardToolbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEKeyboardToolbarViewController.h; sourceTree = "<group>"; };
+		FD57F6F1154382050059DEB8 /* SEKeyboardToolbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEKeyboardToolbarViewController.m; sourceTree = "<group>"; };
+		FD57F6F3154385630059DEB8 /* SEEmojiKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEEmojiKeyboardViewController.h; sourceTree = "<group>"; };
+		FD57F6F4154385630059DEB8 /* SEEmojiKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEmojiKeyboardViewController.m; sourceTree = "<group>"; };
+		FD58C7C0154BDAF000155354 /* backspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backspace@2x.png"; sourceTree = "<group>"; };
+		FD58C7C3154BDB8400155354 /* backspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backspace.png; sourceTree = "<group>"; };
+		FD58C7C5154BDE7A00155354 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		FD58C7C6154BDE7A00155354 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		FD5D58241550BA540091AB6A /* DDPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
+		FD5D58251550BA540091AB6A /* DDPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
+		FD68908E155F524600558946 /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space.png; sourceTree = "<group>"; };
+		FD68908F155F524600558946 /* space@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "space@2x.png"; sourceTree = "<group>"; };
+		FD689092155F64FE00558946 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FD689097155F9E7500558946 /* new_emoji_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_emoji_bg@2x.png"; sourceTree = "<group>"; };
+		FD689099155FA47300558946 /* new_emoji_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_emoji_bg.png; sourceTree = "<group>"; };
+		FD6890AD155FC2F400558946 /* app_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_57.png; sourceTree = SOURCE_ROOT; };
+		FD6890B1155FC2F400558946 /* app_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_114.png; sourceTree = SOURCE_ROOT; };
+		FD6890BA155FC4B000558946 /* app_icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_29.png; sourceTree = SOURCE_ROOT; };
+		FD6890BB155FC4B000558946 /* app_icon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_58.png; sourceTree = SOURCE_ROOT; };
+		FD6890EB1561D22700558946 /* SEInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEInfoViewController.h; sourceTree = "<group>"; };
+		FD6890EC1561D22700558946 /* SEInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEInfoViewController.m; sourceTree = "<group>"; };
+		FD6890EE1561D2CB00558946 /* SEInfoView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEInfoView_iPhone.xib; sourceTree = "<group>"; };
+		FD6890F615633DDC00558946 /* NSString+trimWhitespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+trimWhitespace.h"; sourceTree = "<group>"; };
+		FD6890F715633DDC00558946 /* NSString+trimWhitespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+trimWhitespace.m"; sourceTree = "<group>"; };
+		FD68910C156352FF00558946 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FD68910E1563530E00558946 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FD68911015635D0300558946 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		FD6891151563622A00558946 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		FD6891161563622A00558946 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		FD6891181563626C00558946 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FD77591A15671E97002D137E /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
+		FD77591B15671E97002D137E /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
+		FD9AFEBE1563A4790095A924 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		FD9AFEBF1563A4790095A924 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
+		FDA97253155B719B00568290 /* SEKeyboardPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEKeyboardPageViewController.h; sourceTree = "<group>"; };
+		FDA97254155B719B00568290 /* SEKeyboardPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEKeyboardPageViewController.m; sourceTree = "<group>"; };
+		FDA97260155BA26200568290 /* SEKeyboardPage_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEKeyboardPage_iPhone.xib; sourceTree = "<group>"; };
+		FDD05C261547787E009FF669 /* SEEmojiCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEEmojiCatalog.h; sourceTree = "<group>"; };
+		FDD05C271547787E009FF669 /* SEEmojiCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEmojiCatalog.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD57F6C415437B320059DEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6891191563626D00558946 /* libz.dylib in Frameworks */,
+				FD68911115635D0400558946 /* iAd.framework in Frameworks */,
+				FD68910F1563530F00558946 /* SystemConfiguration.framework in Frameworks */,
+				FD68910D1563530000558946 /* AudioToolbox.framework in Frameworks */,
+				FD4801F3155E12E8004BF15F /* Twitter.framework in Frameworks */,
+				FD4801F1155E0892004BF15F /* MessageUI.framework in Frameworks */,
+				FD57F6CC15437B320059DEB8 /* UIKit.framework in Frameworks */,
+				FD57F6CE15437B320059DEB8 /* Foundation.framework in Frameworks */,
+				FD57F6D015437B320059DEB8 /* CoreGraphics.framework in Frameworks */,
+				FD6891171563622A00558946 /* libTestFlight.a in Frameworks */,
+				FD9AFEC01563A4790095A924 /* libFlurryAnalytics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD57024215448C320059DEB8 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				FD689099155FA47300558946 /* new_emoji_bg.png */,
+				FD689097155F9E7500558946 /* new_emoji_bg@2x.png */,
+				FD4801EB155DDCC5004BF15F /* key_popover.png */,
+				FD57024315448C320059DEB8 /* keyboard_background@2x~iphone.png */,
+				FD57024415448C320059DEB8 /* keyboard_background~iphone.png */,
+			);
+			name = backgrounds;
+			path = Images/backgrounds;
+			sourceTree = "<group>";
+		};
+		FD5707CD15448C330059DEB8 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				FD68908E155F524600558946 /* space.png */,
+				FD68908F155F524600558946 /* space@2x.png */,
+				FD58C7C5154BDE7A00155354 /* settings.png */,
+				FD58C7C6154BDE7A00155354 /* settings@2x.png */,
+				FD58C7C3154BDB8400155354 /* backspace.png */,
+				FD58C7C0154BDAF000155354 /* backspace@2x.png */,
+			);
+			name = icons;
+			path = Images/icons;
+			sourceTree = "<group>";
+		};
+		FD57F6BC15437B320059DEB8 = {
+			isa = PBXGroup;
+			children = (
+				FD57F6D115437B320059DEB8 /* Emoji Keyboard */,
+				FD57F6CA15437B320059DEB8 /* Frameworks */,
+				FD57F6C815437B320059DEB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD57F6C815437B320059DEB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD57F6C715437B320059DEB8 /* Emoji Keyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD57F6CA15437B320059DEB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD6891181563626C00558946 /* libz.dylib */,
+				FD68911015635D0300558946 /* iAd.framework */,
+				FD68910E1563530E00558946 /* SystemConfiguration.framework */,
+				FD68910C156352FF00558946 /* AudioToolbox.framework */,
+				FD4801F2155E12E8004BF15F /* Twitter.framework */,
+				FD4801F0155E0892004BF15F /* MessageUI.framework */,
+				FD57F6CB15437B320059DEB8 /* UIKit.framework */,
+				FD57F6CD15437B320059DEB8 /* Foundation.framework */,
+				FD57F6CF15437B320059DEB8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD57F6D115437B320059DEB8 /* Emoji Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FD57F6FA1543B9DD0059DEB8 /* Images */,
+				FD57F6ED15437B4B0059DEB8 /* Delegates */,
+				FD57F6EC15437B410059DEB8 /* Controllers */,
+				FDD05C241547781A009FF669 /* Classes */,
+				FD57F6EB15437B3B0059DEB8 /* Views */,
+				FD57F6D215437B320059DEB8 /* Supporting Files */,
+				FD57F6FD1543BC8A0059DEB8 /* Support */,
+			);
+			path = "Emoji Keyboard";
+			sourceTree = "<group>";
+		};
+		FD57F6D215437B320059DEB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD689092155F64FE00558946 /* Settings.bundle */,
+				FD57F6D315437B320059DEB8 /* Emoji Keyboard-Info.plist */,
+				FD57F6D415437B320059DEB8 /* InfoPlist.strings */,
+				FD57F6D715437B320059DEB8 /* main.m */,
+				FD57F6D915437B320059DEB8 /* Emoji Keyboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD57F6EB15437B3B0059DEB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD57F6F9154387800059DEB8 /* iPad */,
+				FD57F6F8154387760059DEB8 /* iPhone */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD57F6EC15437B410059DEB8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD57F6DD15437B320059DEB8 /* SEViewController.h */,
+				FD57F6DE15437B320059DEB8 /* SEViewController.m */,
+				FD6890EB1561D22700558946 /* SEInfoViewController.h */,
+				FD6890EC1561D22700558946 /* SEInfoViewController.m */,
+				FD57F6F0154382050059DEB8 /* SEKeyboardToolbarViewController.h */,
+				FD57F6F1154382050059DEB8 /* SEKeyboardToolbarViewController.m */,
+				FD57F6F3154385630059DEB8 /* SEEmojiKeyboardViewController.h */,
+				FD57F6F4154385630059DEB8 /* SEEmojiKeyboardViewController.m */,
+				FDA97253155B719B00568290 /* SEKeyboardPageViewController.h */,
+				FDA97254155B719B00568290 /* SEKeyboardPageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD57F6ED15437B4B0059DEB8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FD57F6DA15437B320059DEB8 /* SEAppDelegate.h */,
+				FD57F6DB15437B320059DEB8 /* SEAppDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FD57F6F8154387760059DEB8 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				FD30ADE3154BC73C00DA37BC /* SEEmojiKeyboard_iPhone.xib */,
+				FDA97260155BA26200568290 /* SEKeyboardPage_iPhone.xib */,
+				FD30ADE5154BC73C00DA37BC /* SEKeyboardToolbar_iPhone.xib */,
+				FD57F6E015437B320059DEB8 /* SEViewController_iPhone.xib */,
+				FD6890EE1561D2CB00558946 /* SEInfoView_iPhone.xib */,
+				FD4801ED155DE653004BF15F /* SEKeyboardView.h */,
+				FD4801EE155DE653004BF15F /* SEKeyboardView.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		FD57F6F9154387800059DEB8 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				FD57F6E315437B320059DEB8 /* SEViewController_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		FD57F6FA1543B9DD0059DEB8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FD68909B155FAFC100558946 /* app_icons */,
+				FD57024215448C320059DEB8 /* backgrounds */,
+				FD5707CD15448C330059DEB8 /* icons */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FD57F6FD1543BC8A0059DEB8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FD77591915671E96002D137E /* DebugLog */,
+				FD9AFEBD1563A4790095A924 /* FlurryAnalytics */,
+				FD6891141563622A00558946 /* TestFlightSDK */,
+				FD5D58241550BA540091AB6A /* DDPageControl.h */,
+				FD5D58251550BA540091AB6A /* DDPageControl.m */,
+				FD30ADEB154BC77B00DA37BC /* NSString+hexToBytes.m */,
+				FD6890F615633DDC00558946 /* NSString+trimWhitespace.h */,
+				FD6890F715633DDC00558946 /* NSString+trimWhitespace.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		FD68909B155FAFC100558946 /* app_icons */ = {
+			isa = PBXGroup;
+			children = (
+				FD6890BA155FC4B000558946 /* app_icon_29.png */,
+				FD6890BB155FC4B000558946 /* app_icon_58.png */,
+				FD6890AD155FC2F400558946 /* app_icon_57.png */,
+				FD6890B1155FC2F400558946 /* app_icon_114.png */,
+			);
+			name = app_icons;
+			sourceTree = "<group>";
+		};
+		FD6891141563622A00558946 /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FD6891151563622A00558946 /* libTestFlight.a */,
+				FD6891161563622A00558946 /* TestFlight.h */,
+			);
+			path = TestFlightSDK;
+			sourceTree = "<group>";
+		};
+		FD77591915671E96002D137E /* DebugLog */ = {
+			isa = PBXGroup;
+			children = (
+				FD77591A15671E97002D137E /* DebugLog.h */,
+				FD77591B15671E97002D137E /* DebugLog.m */,
+			);
+			path = DebugLog;
+			sourceTree = "<group>";
+		};
+		FD9AFEBD1563A4790095A924 /* FlurryAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				FD9AFEBE1563A4790095A924 /* FlurryAnalytics.h */,
+				FD9AFEBF1563A4790095A924 /* libFlurryAnalytics.a */,
+			);
+			path = FlurryAnalytics;
+			sourceTree = "<group>";
+		};
+		FDD05C241547781A009FF669 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FDD05C261547787E009FF669 /* SEEmojiCatalog.h */,
+				FDD05C271547787E009FF669 /* SEEmojiCatalog.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD57F6C615437B320059DEB8 /* Emoji Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD57F6E815437B320059DEB8 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */;
+			buildPhases = (
+				FD57F6C315437B320059DEB8 /* Sources */,
+				FD57F6C415437B320059DEB8 /* Frameworks */,
+				FD57F6C515437B320059DEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji Keyboard";
+			productName = "Emoji Keyboard";
+			productReference = FD57F6C715437B320059DEB8 /* Emoji Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD57F6BE15437B320059DEB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SE;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Ess DoubleYou Eee";
+			};
+			buildConfigurationList = FD57F6C115437B320059DEB8 /* Build configuration list for PBXProject "Emoji Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD57F6BC15437B320059DEB8;
+			productRefGroup = FD57F6C815437B320059DEB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD57F6C615437B320059DEB8 /* Emoji Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD57F6C515437B320059DEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD57F6D615437B320059DEB8 /* InfoPlist.strings in Resources */,
+				FD57F6E215437B320059DEB8 /* SEViewController_iPhone.xib in Resources */,
+				FD5707DE15448C330059DEB8 /* keyboard_background@2x~iphone.png in Resources */,
+				FD5707DF15448C330059DEB8 /* keyboard_background~iphone.png in Resources */,
+				FD30ADE7154BC73C00DA37BC /* SEEmojiKeyboard_iPhone.xib in Resources */,
+				FD30ADE8154BC73C00DA37BC /* SEKeyboardToolbar_iPhone.xib in Resources */,
+				FD58C7C1154BDAF000155354 /* backspace@2x.png in Resources */,
+				FD58C7C4154BDB8400155354 /* backspace.png in Resources */,
+				FDA97261155BA26200568290 /* SEKeyboardPage_iPhone.xib in Resources */,
+				FD689090155F524600558946 /* space.png in Resources */,
+				FD689091155F524600558946 /* space@2x.png in Resources */,
+				FD689093155F64FE00558946 /* Settings.bundle in Resources */,
+				FD689098155F9E7500558946 /* new_emoji_bg@2x.png in Resources */,
+				FD68909A155FA47300558946 /* new_emoji_bg.png in Resources */,
+				FD6890B4155FC2F400558946 /* app_icon_57.png in Resources */,
+				FD6890B8155FC2F400558946 /* app_icon_114.png in Resources */,
+				FD6890BC155FC4B000558946 /* app_icon_29.png in Resources */,
+				FD6890BD155FC4B000558946 /* app_icon_58.png in Resources */,
+				FD6890EF1561D2CB00558946 /* SEInfoView_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD57F6C315437B320059DEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD57F6D815437B320059DEB8 /* main.m in Sources */,
+				FD57F6DC15437B320059DEB8 /* SEAppDelegate.m in Sources */,
+				FD57F6DF15437B320059DEB8 /* SEViewController.m in Sources */,
+				FD57F6F2154382050059DEB8 /* SEKeyboardToolbarViewController.m in Sources */,
+				FD57F6F6154385630059DEB8 /* SEEmojiKeyboardViewController.m in Sources */,
+				FDD05C281547787E009FF669 /* SEEmojiCatalog.m in Sources */,
+				FD30ADEC154BC77B00DA37BC /* NSString+hexToBytes.m in Sources */,
+				FD5D58261550BA540091AB6A /* DDPageControl.m in Sources */,
+				FDA97255155B719B00568290 /* SEKeyboardPageViewController.m in Sources */,
+				FD4801EF155DE653004BF15F /* SEKeyboardView.m in Sources */,
+				FD6890ED1561D22700558946 /* SEInfoViewController.m in Sources */,
+				FD6890F815633DDC00558946 /* NSString+trimWhitespace.m in Sources */,
+				FD77591C15671E97002D137E /* DebugLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD30ADE3154BC73C00DA37BC /* SEEmojiKeyboard_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD30ADE4154BC73C00DA37BC /* en */,
+			);
+			name = SEEmojiKeyboard_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		FD30ADE5154BC73C00DA37BC /* SEKeyboardToolbar_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD30ADE6154BC73C00DA37BC /* en */,
+			);
+			name = SEKeyboardToolbar_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		FD57F6D415437B320059DEB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD57F6D515437B320059DEB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD57F6E015437B320059DEB8 /* SEViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD57F6E115437B320059DEB8 /* en */,
+			);
+			name = SEViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		FD57F6E315437B320059DEB8 /* SEViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD57F6E415437B320059DEB8 /* en */,
+			);
+			name = SEViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD57F6E615437B320059DEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Ehrenberg (NP55M8YVZ7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "192694FE-D32F-408C-8628-9E6BB1C18477";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD57F6E715437B320059DEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Steve Ehrenberg";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "3CEF3843-F097-494D-810A-7F106BFAE0CB";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD57F6E915437B320059DEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ehrenberg (NP55M8YVZ7)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Emoji Keyboard/Emoji Keyboard-Prefix.pch";
+				INFOPLIST_FILE = "Emoji Keyboard/Emoji Keyboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/facebook-ios-sdk\"",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/GoogleAdMobAdsSDK\"",
+					"\"$(SRCROOT)/../../../Downloads/LibAdapterIAd-Mar282012\"",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/TestFlightSDK\"",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/FlurryAnalytics\"",
+				);
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "192694FE-D32F-408C-8628-9E6BB1C18477";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD57F6EA15437B320059DEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Steve Ehrenberg";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Emoji Keyboard/Emoji Keyboard-Prefix.pch";
+				INFOPLIST_FILE = "Emoji Keyboard/Emoji Keyboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/facebook-ios-sdk\"",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/GoogleAdMobAdsSDK\"",
+					"\"$(SRCROOT)/../../../Downloads/LibAdapterIAd-Mar282012\"",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/TestFlightSDK\"",
+					"\"$(SRCROOT)/Emoji Keyboard/Support/FlurryAnalytics\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3CEF3843-F097-494D-810A-7F106BFAE0CB";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD57F6C115437B320059DEB8 /* Build configuration list for PBXProject "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD57F6E615437B320059DEB8 /* Debug */,
+				FD57F6E715437B320059DEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD57F6E815437B320059DEB8 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD57F6E915437B320059DEB8 /* Debug */,
+				FD57F6EA15437B320059DEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD57F6BE15437B320059DEB8 /* Project object */;
+}

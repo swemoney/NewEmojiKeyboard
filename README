@@ -1,0 +1,11 @@
+NEW Emoji Keyboard - 1.0 - Steve Ehrenberg - http://swemoney.com
+================================================================
+New Emoji Keyboard was rejected by Apple because apparently they aren't approving any more emoji keyboard applications. They kept telling me that emoji is included in iOS 5 and didn't seem to care that this keyboard was more than just the stock Apple emoji keyboard.
+
+Setup
+=====
+Should be able to just open up the project and build.
+
+Disclaimer
+==========
+There was a bit more than I wanted to do with this app. It works well, but there is also a lot of cleanup and optimization I haven't gotten around to. Feel free to to submit any fixes you'd like. I probably won't be maintaining this very much.

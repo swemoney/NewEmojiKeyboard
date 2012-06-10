@@ -1,0 +1,27 @@
+//
+// Prefix header for all source files of the 'Emoji Keyboard' target in the 'Emoji Keyboard' project
+//
+
+#import <Availability.h>
+#import "DebugLog.h"
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#define Device_is_iPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define kEmojiCatalog ((SEAppDelegate *)[[UIApplication sharedApplication] delegate]).emojiCatalog
+#define kAppDelegate ((SEAppDelegate *)[[UIApplication sharedApplication] delegate])
+#define kKeyboard ((SEAppDelegate *)[[UIApplication sharedApplication] delegate]).viewController.keyboardViewController
+
+#ifdef DEBUG
+#define DLog(fmt, ...) DebugLog((@" " fmt), ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+#define ALog(fmt, ...) DebugLog((@"[%s][%d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
